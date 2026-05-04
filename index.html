@@ -27,7 +27,18 @@
         <h2>Art - Consult & Développement (ACD)</h2>
         <p><strong>Chevalier de l’Ordre du Mérite</strong> • Depuis 2005 à Dédougou</p>
     </header>
-    
+    .logo {
+    max-width: 100%; /* Le logo ne dépassera jamais son conteneur */
+    height: auto;    /* Conserve les proportions */
+    width: 400px;    /* Taille par défaut sur desktop */
+}
+
+/* Réduction automatique sur petit écran (mobile) */
+@media (max-width: 767px) {
+    .logo {
+        width: 120px; /* Taille réduite sur mobile */
+    }
+}
     <nav>
         <a href="index.html">Accueil</a>
         <a href="qui-sommes-nous.html">Qui sommes-nous</a>
