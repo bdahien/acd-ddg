@@ -107,6 +107,23 @@
     </footer>
 </body>
 </html>
+<section class="contact">
+  <h2>Contactez ACD-DDG</h2>
+
+  <form action="https://formspree.io/f/xkoyrbnk" method="POST">
+
+    <input type="text" name="nom" placeholder="Votre nom" required>
+
+    <input type="email" name="email" placeholder="Votre email" required>
+
+    <input type="text" name="objet" placeholder="Objet">
+
+    <textarea name="message" placeholder="Votre message" required></textarea>
+
+    <button type="submit">Envoyer</button>
+
+  </form>
+</section>
 
 3. Page Domaines d’activités
 
@@ -128,6 +145,32 @@
         th { background:#C44A2C; color:white; }
         footer { background:#2C2C2C; color:white; text-align:center; padding:40px 20px; }
     </style>
+    .contact {
+  padding: 60px;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: gold;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+    
 </head>
 <body>
     <header>
